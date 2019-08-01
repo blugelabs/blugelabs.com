@@ -1,0 +1,8 @@
+<footer>
+  <p>
+  &copy; {{ .Site.Params.publicationYear }} {{ .Site.Params.Author }}.
+  </p>
+</footer>
+{{- range .Site.Params.custom_js -}}
+<script src="{{ . }}"></script>
+{{ end }}

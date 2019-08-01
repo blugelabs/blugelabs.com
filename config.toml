@@ -1,0 +1,9 @@
+baseURL = "https://blugelabs.com/"
+languageCode = "en-us"
+title = "Bluge Labs"
+theme = "pulp"
+
+[params]
+  Author = "Bluge Labs"
+  avatar = "avatar.png"
+  favicon = "favicon.ico"
