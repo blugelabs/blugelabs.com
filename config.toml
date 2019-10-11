@@ -1,9 +1,24 @@
 baseURL = "https://blugelabs.com/"
 languageCode = "en-us"
 title = "Bluge Labs"
-theme = "pulp"
+theme = "beautifulhugo"
 
 [params]
-  Author = "Bluge Labs"
+  Author = "Bluge Labs, LLC."
   avatar = "avatar.png"
-  favicon = "favicon.ico"
+  favicon = "img/favicon.ico"
+  logo = "img/avatar.png"
+
+ [Author]
+   name = "Bluge Labs, LLC."
+   twitter = "blugelabs"
+   github = "blugelabs"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "thanks"
+    name = "thanks"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/thanks/"
+    weight = -110

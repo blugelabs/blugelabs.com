@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div role="main" class="container">
+  <div class="container" role="main">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         {{ with .Content }}
@@ -7,14 +7,11 @@
             {{.}}
           </div>
         {{ end }}
-
         <div class="posts-list">
-          {{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-          {{ range $pag.Pages }}
-            {{ partial "post_preview" . }}
+          {{ range .Paginator.Pages }}
+            {{ partial "post_preview.html" .}}
           {{ end }}
         </div>
-
         {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
           <ul class="pager main-pager">
             {{ if .Paginator.HasPrev }}
@@ -33,4 +30,3 @@
     </div>
   </div>
 {{ end }}
-

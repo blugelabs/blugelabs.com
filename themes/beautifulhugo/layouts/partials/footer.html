@@ -30,14 +30,6 @@
           {{ end }}
         </ul>
         <p class="credits copyright text-muted">
-
-          &nbsp;&copy;
-          {{ if .Site.Params.since }}
-            {{ .Site.Params.since }} - {{ .Site.LastChange.Format "2006" }}
-          {{ else }}
-            {{ .Site.LastChange.Format "2006" }}
-          {{ end }}
-
           {{ if .Site.Author.name }}
             {{ if .Site.Author.website }}
               <a href="{{ .Site.Author.website }}">{{ .Site.Author.name }}</a>
@@ -46,8 +38,23 @@
             {{ end }}
           {{ end }}
 
-        </p>
+          &nbsp;&bull;&nbsp;&copy;
+          {{ if .Site.Params.since }}
+            {{ .Site.Params.since }} - {{ .Site.LastChange.Format "2006" }}
+          {{ else }}
+            {{ .Site.LastChange.Format "2006" }}
+          {{ end }}
 
+          {{ if .Site.Title }}
+            &nbsp;&bull;&nbsp;
+            <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
+          {{ end }}
+        </p>
+        <!-- Please don't remove this, keep my open source work credited :) -->
+        <p class="credits theme-by text-muted">
+          {{ i18n "poweredBy" . | safeHTML }}
+          {{ if $.GitInfo }}&nbsp;&bull;&nbsp;[<a href="{{ .Site.Params.commit }}{{ .GitInfo.Hash }}">{{ substr .GitInfo.Hash 0 8 }}</a>]{{ end }}
+        </p>
       </div>
     </div>
   </div>
