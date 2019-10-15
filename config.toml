@@ -18,8 +18,22 @@ googleAnalytics = " UA-149922712-1"
 [menu]
 
   [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/blog/"
+    weight = -120
+
+  [[menu.main]]
     identifier = "thanks"
     name = "thanks"
     pre = "<i class='fa fa-heart'></i>"
     url = "/thanks/"
     weight = -110
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/about/"
+    weight = -100
