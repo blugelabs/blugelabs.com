@@ -2,7 +2,8 @@
 
 These individuals and organizations all provide recurring support to Bluge Labs, ensuring the future of open-source search software for the Go community.
 
-<a href="https://www.patreon.com/bePatron?u=25391938" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+<a href="https://www.patreon.com/blugelabs"><img src="/img/patreon.png" height="34"/></a>
+<a href="https://github.com/sponsors/mschoch"><img src="/img/githubsponsors.png" height="48"/></a>
 
 ## Strategic Sponsor
 
@@ -21,6 +22,10 @@ These individuals and organizations all provide recurring support to Bluge Labs,
 
 ## Open-Source Supporters
 
-Your Name Here
+[Sergio Rubio](https://github.com/rubiojr)
 
-<a href="https://www.patreon.com/bePatron?u=25391938" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+---
+
+<a href="https://www.patreon.com/blugelabs"><img src="/img/patreon.png" height="34"/></a>
+<a href="https://github.com/sponsors/mschoch"><img src="/img/githubsponsors.png" height="48"/></a>
+
