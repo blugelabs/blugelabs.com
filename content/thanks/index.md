@@ -16,9 +16,7 @@ These individuals and organizations all provide recurring support to Bluge Labs,
 
 ## Corporate Sponsors
 
-![Example image](/img/yourlogo-100.png)
-![Example image](/img/yourlogo-100.png)
-![Example image](/img/yourlogo-100.png)
+<a href="https://www.couchbase.com/"><img src="/img/couchbase-100.png" height="100" alt="Couchbase Logo" title="Couchbase"/></a>
 
 ## Open-Source Supporters
 
