@@ -23,6 +23,8 @@ These individuals and organizations all provide recurring support to Bluge Labs,
 [Sergio Rubio](https://github.com/rubiojr)
 <br/>
 [Silvan Jegen](https://github.com/Shugyousha)
+<br/>
+[Minoru Osuka](https://github.com/mosuka)
 
 ---
 
