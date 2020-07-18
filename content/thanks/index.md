@@ -25,6 +25,8 @@ These individuals and organizations all provide recurring support to Bluge Labs,
 [Silvan Jegen](https://github.com/Shugyousha)
 <br/>
 [Minoru Osuka](https://github.com/mosuka)
+<br/>
+[Aman Gupta Karmani](https://github.com/tmm1)
 
 ---
 
