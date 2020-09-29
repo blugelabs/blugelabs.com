@@ -11,6 +11,8 @@ Sponsors of my work were invited to introductory session this afternoon, and the
 
 ![Bluge Introduction Image](/img/bluge-introduction-session.png)
 
+During this first developer preview, we have focused on new features, and the API used to work with the library.  Follow what we have planned for [Developer Preview 2](https://github.com/blugelabs/bluge/milestone/2).
+
 Important Links:
 
 - [Github Repository](https://github.com/blugelabs/bluge/)
