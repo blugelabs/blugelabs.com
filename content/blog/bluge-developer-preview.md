@@ -12,6 +12,7 @@ Sponsors of my work were invited to introductory session this afternoon, and the
 ![Bluge Introduction Image](/img/bluge-introduction-session.png)
 
 Important Links:
+
 - [Github Repository](https://github.com/blugelabs/bluge/)
 - [API Docs](https://pkg.go.dev/github.com/blugelabs/bluge)
 - [Website/Documentation](https://blugelabs.com/bluge/) (preliminary)
