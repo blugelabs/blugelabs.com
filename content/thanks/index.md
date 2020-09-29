@@ -15,6 +15,8 @@ These individuals and organizations all provide recurring support to Bluge Labs,
 [Minoru Osuka](https://github.com/mosuka)
 <br/>
 [Aman Gupta Karmani](https://github.com/tmm1)
+<br/>
+[Marco Vito Moscaritolo](https://github.com/mavimo)
 
 ---
 
