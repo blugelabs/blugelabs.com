@@ -1,0 +1,53 @@
+<a href="/bluge/">Bluge</a>
+<ul class="docmenu">
+    {{ $currentNode := . }}
+    {{ range .Site.Menus.bluge }}
+        {{ if .HasChildren }}
+            <li>
+                {{if $currentNode.IsMenuCurrent "bluge" . }}
+                    {{ .Name }}
+                {{else  if .URL }}
+                    <a href="{{.URL}}">{{.Name}}</a>
+                {{else}}
+                    {{ .Name }}
+                {{end}}
+                <ul  class="docmenu">
+                    {{ range .Children }}
+                        {{ if .HasChildren }}
+                            <li>
+                                {{if $currentNode.IsMenuCurrent "bluge" . }}
+                                    {{ .Name }}
+                                {{ else if .URL }}
+                                    <a href="{{.URL}}">{{.Name}}</a>
+                                {{else}}
+                                    {{ .Name }}
+                                {{end}}
+                                <ul  class="docmenu">
+                                    {{ range .Children }}
+                                        {{if $currentNode.IsMenuCurrent "bluge" . }}
+                                            <li class="active">{{ .Name }}</li>
+                                        {{else}}
+                                            <li><a href="{{.URL}}">{{ .Name }}</a></li>
+                                        {{end}}
+                                    {{end}}
+                                </ul>
+                            </li>
+                        {{else}}
+                            {{if $currentNode.IsMenuCurrent "bluge" . }}
+                                <li class="active">{{ .Name }}</li>
+                            {{else}}
+                                <li><a href="{{.URL}}">{{ .Name }}</a></li>
+                            {{end}}
+                        {{end}}
+                    {{ end }}
+                </ul>
+            </li>
+        {{else}}
+            {{if $currentNode.IsMenuCurrent "bluge" . }}
+                <li class="active">{{ .Name }}</li>
+            {{else}}
+                <li><a href="{{.URL}}">{{ .Name }}</a></li>
+            {{end}}
+        {{end}}
+    {{end}}
+</ul>

@@ -17,6 +17,13 @@ theme = "beautifulhugo"
 [menu]
 
   [[menu.main]]
+    identifier = "bluge"
+    name = "bluge"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/bluge/"
+    weight = -130
+
+  [[menu.main]]
     identifier = "blog"
     name = "blog"
     pre = "<i class='fa fa-heart'></i>"
