@@ -17,6 +17,8 @@ These individuals and organizations all provide recurring support to Bluge Labs,
 [Aman Gupta Karmani](https://github.com/tmm1)
 <br/>
 [Marco Vito Moscaritolo](https://github.com/mavimo)
+<br/>
+[Michael Schuett](https://github.com/michaeljs1990)
 
 ---
 
