@@ -1,4 +1,6 @@
-# About
+---
+title: "About"
+---
 
 <img src="/img/about-banner.jpg" class="img-rounded"/>
 

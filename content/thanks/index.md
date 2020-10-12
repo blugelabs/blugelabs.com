@@ -1,4 +1,6 @@
-# Thanks
+---
+title: "Thanks"
+---
 
 These individuals and organizations all provide recurring support to Bluge Labs, ensuring the future of open-source search software for the Go community.
 
