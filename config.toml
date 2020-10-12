@@ -46,3 +46,6 @@ theme = "beautifulhugo"
 
 [markup.goldmark.renderer]
 unsafe= true
+
+[outputs]
+  page = ["HTML", "JSON"]
