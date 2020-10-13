@@ -9,6 +9,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/blugelabs/bluge"
@@ -49,7 +50,10 @@ func walkDirectoryForIndexing(path string, idx *bluge.OfflineWriter) error {
 			if err2 != nil {
 				return err2
 			}
-			return idx.Insert(pageDoc)
+			if pageDoc != nil {
+				return idx.Insert(pageDoc)
+			}
+			return nil
 		}
 		return nil
 	})
@@ -77,6 +81,11 @@ func readParseMapPage(path string) (*bluge.Document, error) {
 	err = json.Unmarshal(pageBytes, &page)
 	if err != nil {
 		return nil, fmt.Errorf("error unmarshaling json '%s': %v", path, err)
+	}
+
+	if strings.HasSuffix(page.PermaLink, "/search/") {
+		// don't index the search page itself
+		return nil, nil
 	}
 
 	doc := bluge.NewDocument(page.PermaLink).
