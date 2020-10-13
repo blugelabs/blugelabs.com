@@ -103,8 +103,7 @@ func (s *SearchResponse) AddPaging(aggs *search.Bucket, page int) {
 	if page != 1 {
 		s.Message = fmt.Sprintf("Page %d of ", page)
 	}
-	s.Message += fmt.Sprintf("%d results (%s)", aggs.Count(),
-		aggs.Duration().Round(roundDurationTo))
+	s.Message += fmt.Sprintf("%d results", aggs.Count())
 }
 
 func (s *SearchResponse) AddAggregations(aggs *search.Bucket, filters []*Filter) {
