@@ -89,16 +89,22 @@ func readParseMapPage(path string) (*bluge.Document, error) {
 	}
 
 	doc := bluge.NewDocument(page.PermaLink).
-		AddField(bluge.NewTextField("title", page.Title).StoreValue()).
-		AddField(bluge.NewKeywordField("type", page.Type).StoreValue().Aggregatable()).
-		AddField(bluge.NewTextField("content", html.UnescapeString(page.Content)).StoreValue().HighlightMatches()).
+		AddField(
+			bluge.NewTextField("title", page.Title).
+				StoreValue()).
+		AddField(
+			bluge.NewKeywordField("type", page.Type).
+				StoreValue().
+				Aggregatable()).
+		AddField(
+			bluge.NewTextField("content", html.UnescapeString(page.Content)).
+				StoreValue().
+				HighlightMatches()).
 		AddField(bluge.NewCompositeFieldExcluding("_all", []string{"_id"}))
 
 	pageDate, err := time.Parse(time.RFC3339, page.Date)
 	if err == nil && !pageDate.IsZero() {
 		doc.AddField(bluge.NewDateTimeField("updated", pageDate))
-	} else {
-		fmt.Printf("date: %v err: %v\n", pageDate, err)
 	}
 
 	return doc, nil
