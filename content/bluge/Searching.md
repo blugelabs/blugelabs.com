@@ -99,6 +99,7 @@ for err == nil && next != nil {
 	if err != nil {
 		log.Fatalf("error accessing stored fields: %v", err)
 	}
+	next, err = dmi.Next()
 }
 if err != nil {
 	log.Fatalf("error iterating results: %v", err)
