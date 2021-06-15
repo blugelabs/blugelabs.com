@@ -23,6 +23,8 @@ These individuals and organizations all provide recurring support to Bluge Labs,
 [Raja Bahadur](https://github.com/pradeep-raja)
 <br/>
 [Mark Wolfe](https://github.com/wolfeidau)
+<br/>
+[Prabhat Sharma](https://github.com/prabhatsharma)
 
 ---
 
