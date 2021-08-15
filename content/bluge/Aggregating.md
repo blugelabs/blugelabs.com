@@ -30,7 +30,7 @@ Other aggregations (which we refer to as metric aggregations) compute values on 
 
 The terms aggregation typically operates on field data.  Each term seen becomes it's own bucket, and by default the count metric is applied to each bucket.  Finally, at the conclusion of the search, these buckets are sorted by their counts descending, and the top N buckets are returned as part of the result.
 
-For example, consider a set documents describing products.  Each product has a keyword field named `category`, indexed with the sortable option.  When a user searches the products, we can compute a terms aggregation on the `category` field, and display to the user the top 5 categories within their search results, and a count of how many products were in each category.  This is often used as a way for users to drill deeper into the results, by refining their search filter interactively.
+For example, consider a set documents describing products.  Each product has a keyword field named `category`, indexed with the aggregatable option.  When a user searches the products, we can compute a terms aggregation on the `category` field, and display to the user the top 5 categories within their search results, and a count of how many products were in each category.  This is often used as a way for users to drill deeper into the results, by refining their search filter interactively.
 
 ### Numeric Range Aggregation
 
