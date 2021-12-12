@@ -11,4 +11,4 @@ Bluge is an open-source indexing/search library for Go.
 - [Issues](https://github.com/blugelabs/bluge/issues)
 - [API Documentation](https://pkg.go.dev/github.com/blugelabs/bluge)
 - [Google Group](https://groups.google.com/g/bluge)
-- [Gophers Slack](https://gophers.slack.com) \#bleve - [Invite to Join](https://invite.slack.golangbridge.org/)
+- [Gophers Slack](https://gophers.slack.com) \#bluge - [Invite to Join](https://invite.slack.golangbridge.org/)
